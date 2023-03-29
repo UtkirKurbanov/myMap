@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myMap</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Google Maps</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nihil excepturi corrupti rerum consequuntur ad magni non, deserunt est eum nesciunt optio. Dolorum totam cupiditate unde, quia nostrum libero perferendis vitae molestiae eius quisquam enim repellat consequatur, ipsam reiciendis quis! Incidunt magnam repudiandae doloremque nesciunt rem? Accusamus minima soluta nihil officiis quod earum, quisquam repellat nemo itaque consectetur? Consectetur sapiente officiis, non corporis eos hic laborum asperiores sunt tenetur porro dolorum, atque illum distinctio a ducimus explicabo odio aut debitis error quisquam maxime. Odio veniam labore, omnis tenetur excepturi eius molestiae mollitia inventore beatae nemo laboriosam voluptatem temporibus. Quam, doloremque.</p>
+
+    <div id="map">
+        <div id="infowindow-content">
+            <img src="" alt="" id="place-icon" height="16" width="16">
+            <span id="place-name" class="title"></span><br />
+            Place ID <span id="place-id"></span><br />
+            <span id="place-address"></span>
+        </div>
+    </div>
+
+    <h2>POI Click Events</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta aut dolorem unde dolores, autem vero laborum consequatur delectus repellat voluptates sint praesentium tempora neque hic deserunt perspiciatis itaque sit, minus quisquam. Temporibus repudiandae iste ipsum impedit commodi vero dolorem amet cumque fugit rem molestias doloribus obcaecati, qui ad ex culpa reiciendis, nam inventore soluta doloremque laboriosam provident autem possimus praesentium! Dignissimos rerum amet vitae suscipit pariatur repellat. Corrupti nobis explicabo, ipsa esse natus odit quaerat facere ab ipsum voluptates voluptate?</p>
+
+    <!-- 
+          The `defer` attribute causes the callback to execute after the full HTML
+          document has been parsed. For non-blocking uses, avoiding race conditions,
+          and consistent behavior across browsers, consider loading using Promises.
+          See https://developers.google.com/maps/documentation/javascript/load-maps-js-api
+          for more information.
+    -->
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKqHUZK6f7L2IzmlDKwE8cBdNbFXRu19Q&callback=initMap&libraries=places&v=weekly"
+        defer>
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
